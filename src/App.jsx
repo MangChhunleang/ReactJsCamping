@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import HeroImage from "./components/HeroImage";
@@ -8,7 +8,7 @@ import OnFooter from "./components/OnFooter";
 import { Footer } from "./components/Footer";
 import Register from "./components/Register";
 import HeaderAfterLogin from "./components/HeaderAfterLogin";
-import CheckCard from './components/CheckCard';
+import CheckCard from "./components/CheckCard";
 import OrderSummary from "./components/OrderSummary";
 import OrderSummary2 from "./components/OrderSummary2";
 import OrderSummary3 from "./components/OrderSummary3";
@@ -31,10 +31,10 @@ function App() {
     <>
       {isLoggedIn ? <HeaderAfterLogin /> : <Header toggleModal={toggleModal} />}
       {!isLoggedIn && (
-        <Register 
-          isModalOpen={isModalOpen} 
-          toggleModal={toggleModal} 
-          onLogin={handleLogin} 
+        <Register
+          isModalOpen={isModalOpen}
+          toggleModal={toggleModal}
+          onLogin={handleLogin}
         />
       )}
       <Navbar />
